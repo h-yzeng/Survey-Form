@@ -1,5 +1,5 @@
 # fccsurveyformproject
-This is one of the required projects to earn the Responsive Web Design Certification on FreeCodeCamp.com
+This is one of the required projects to earn the Responsive Web Design Certification on FreeCodeCamp.org
 
 This survey form is used to collect data from individuals who want to attend a coding boot camp.
 
