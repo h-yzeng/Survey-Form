@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>My Survey Form</title>
+</head>
+<body>
+  <header>
+    <h1 id="title">Coding Camp</h1>
+    <p id="description">This survey is for those who want to learn coding seriously.</p>
+  </header>
+  <div class="section-divider"></div>
+  <main>
+    <form id="survey-form">
+      <label id="name-label">Name</label>
+      <input id="name" type="text" placeholder="Enter your name" required>
+      
+      <label id="email-label">Email</label>
+      <input id="email" type="email" placeholder="Enter your email" required>
+      
+      <label id="number-label">Years of experience</label>
+      <input id="number" type="number" placeholder="Enter years of experience" min="0" max="100" required>
+      
+      <label for="dropdown">Path of Choice</label>
+      <select id="dropdown" name="codepath">
+        <option value="" disabled selected>Select a choice</option>
+        <option>Front-end Web Development</option>
+        <option>Back-end Web Development</option>
+        <option>Full-stack Web Development</option>
+      </select>
+      <div class="section-divider"></div>
+      <fieldset>
+        <legend>Choice of Tech Stack</legend>
+        <label for="mern"><input type="radio" id="mern" name="stack" value="MERN" checked> MERN Stack</label>
+        <label for="mean"><input type="radio" id="mean" name="stack" value="MEAN">MEAN Stack</label>
+      </fieldset>
+      <div class="section-divider"></div>
+      <label for="confirmation" id="confirmation">Are you sure you want to participate?</label>
+      <label for="yes">Yes <input type="checkbox" id="yes" value="Yes" checked></label>
+      <label for="no">No<input type="checkbox" id="no" value="No"></label>
+      <div class="section-divider"></div>
+      <label for="commentsarea">Additional Comments</label>
+      <textarea id="textarea" name="textarea" rows="5" cols="25" placeholder="Add additional comments here"></textarea>
+      <div class="section-divider"></div>
+      <input type="submit" id="submit" value="Submit">
+    </form>
+  </main>
+  <footer id="form-footer">
+  <p>&copy; 2023 Coding Camp Survey</p>
+</footer>
+</body>
+</html>
